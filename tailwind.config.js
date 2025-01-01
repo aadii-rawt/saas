@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-          inter: ['Inter', 'sans-serif'],
+          ubuntu: ["Ubuntu", "serif"],
+
       },
       animation: {
           'infinite-scroll': 'infinite-scroll 25s linear infinite',
@@ -17,8 +18,7 @@ export default {
               from: { transform: 'translateX(0)' },
               to: { transform: 'translateX(-100%)' },
           }
-      }              
-      
+      }                  
   },
   },
   plugins: [],
