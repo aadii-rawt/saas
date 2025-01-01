@@ -20,7 +20,7 @@ const Cards = () => {
     <div className="relative bg-[#212121] py-20 px-5">
       {/* Custom Cursor */}
       <div
-        className={`fixed w-8 h-8 rounded-full pointer-events-none transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-200 z-50 ${
+        className={`fixed w-8 h-8  pointer-events-none transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-200 z-50 ${
           isHovering ? "opacity-100 bg-pink-500" : "opacity-0"
         }`}
         style={{
@@ -32,7 +32,7 @@ const Cards = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Card 1 */}
         <div
-          className="bg-[#2B2B2B] rounded-xl shadow-lg p-6 text-white"
+          className="bg-[#2B2B2B] rounded-xl shadow-lg p-6 text-white cursor-none"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
@@ -68,7 +68,7 @@ const Cards = () => {
 
         {/* Card 2 */}
         <div
-          className="bg-[#2B2B2B] rounded-xl shadow-lg p-6 px-10 text-white flex flex-col justify-center items-center relative"
+          className="bg-[#2B2B2B] rounded-xl shadow-lg p-6 px-10 text-white flex flex-col justify-center items-center relative cursor-none"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
@@ -91,7 +91,7 @@ const Cards = () => {
 
         {/* Card 3 */}
         <div
-          className="bg-[#2B2B2B] rounded-xl shadow-lg text-white"
+          className="bg-[#2B2B2B] rounded-xl shadow-lg text-white cursor-none"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
