@@ -1,6 +1,9 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
 import FAQ from "./components/FAQ";
+import Text from "./components/Text";
+import Footer from "./components/Footer";
+import Cards from "./components/Cards";
 
 const App = () => {
   return (
@@ -108,6 +111,8 @@ const App = () => {
         </div>
       </main>
 
+      {/* <Text /> */}
+
       <div className="py-10 flex container mx-10 items-center justify-center flex-col w-fit">
         <h1 className="text-center text-5xl font font-ubuntu">Apps, websites, <br /> logos & more</h1>
         <div className="flex  gap-3 py-2 mt-10">
@@ -177,11 +182,16 @@ const App = () => {
         </div>
       </div>
 
+    <div>
+      <Cards />
+    </div>
 
       <div className="flex items-center justify-center py-10">
         <FAQ />
 
       </div>
+
+      <Footer />
 
       {/* Footer Section */}
       {/* <footer className="text-center py-6 bg-gray-900">
