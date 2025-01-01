@@ -1,5 +1,6 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
+import FAQ from "./components/FAQ";
 
 const App = () => {
   return (
@@ -37,7 +38,7 @@ const App = () => {
             {/* <span className="bg-purple-700 text-white py-1 px-3 rounded-full text-xs inline-block mb-6">
               Updated: AI Integrated
             </span> */}
-            <h2 className="text-5xl font-bold  bg-gradient-to-b from-white   via-gray-200 to-gray-500 bg-clip-text text-transparent leading-normal">
+            <h2 className="text-5xl font-bold  bg-gradient-to-b from-white   via-gray-200  to-gray-500 bg-clip-text text-transparent leading-normal">
               Do perfect, make perfect with Ngendog
             </h2>
             <p className="text-gray-400 ">
@@ -108,7 +109,7 @@ const App = () => {
       </main>
 
       <div className="py-10 flex container mx-10 items-center justify-center flex-col w-fit">
-        <h1 className="text-center text-5xl font-medium">Apps, websites, <br /> logos & more</h1>
+        <h1 className="text-center text-5xl font font-ubuntu">Apps, websites, <br /> logos & more</h1>
         <div className="flex  gap-3 py-2 mt-10">
           <button class="styled-button">
             Landing Page
@@ -176,6 +177,8 @@ const App = () => {
         </div>
       </div>
 
+
+    <FAQ />
 
       {/* Footer Section */}
       {/* <footer className="text-center py-6 bg-gray-900">
