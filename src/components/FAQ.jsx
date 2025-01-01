@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const accordionData = [
   {
@@ -35,26 +35,42 @@ function FAQ() {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className='max-w-[1280px] mx-auto section'>
-      <div>
-      <h1 className='sm:text-4xl text-3xl font-ubuntu text-center sm:mb-20 mb-8'>Commonly asked questions</h1>
-      <div className="relative">
-        <div className="w-full md:w-3/5 md:mx-auto p-4 md:p-8 rounded-2xl">
-          {accordionData.map((item, index) => (
-            <AccordionItem
-              key={index}
-              title={item.title}
-              content={item.content}
-              isOpen={openIndex === index}
-              onClick={() => handleToggle(index)}
-              index={index}
-            />
-          ))}
+    <div className='max-w-[1280px] mx-auto section flex justify-between '>
+      <div className="w-1/2">
+        <h1 className='sm:text-4xl pl-16 text-4xl font-ubuntu'>Commonly asked <br /> questions</h1>
+        <div className="relative pl-10">
+          <div className="w-full  md:mx-auto p-4 md:p-8 rounded-2xl">
+            {accordionData.map((item, index) => (
+              <AccordionItem
+                key={index}
+                title={item.title}
+                content={item.content}
+                isOpen={openIndex === index}
+                onClick={() => handleToggle(index)}
+                index={index}
+              />
+            ))}
+          </div>
         </div>
       </div>
-      </div>
-      <div>
-
+      <div className="w-1/2 flex h-fit justify-center">
+        {/* Card Component */}
+        <div className="bg-[#2B2B2B] shadow-md rounded-xl p-6 text-center w-80">
+          <div className="relative w-24 h-24 mx-auto mb-4">
+            <img
+              src="https://cdn.prod.website-files.com/5837424ae11409586f837994/65de1c417a9d965ed9d7def1_d.png"
+              alt="Profile"
+              className="rounded-full"
+            />
+          </div>
+          <h2 className="text-3xl font-semibold mb-2 text-white leading-8">Book a 15-minute intro call</h2>
+          <button class="styled-button !rounded-md !px-10 font-medium my-5">
+            Call now
+          </button>
+          <p className="text-sm text-gray-500 mt-4">
+            Prefer to email? <a href="mailto:hello@designjoy.co" className="text-orange-500">hello@designjoy.co</a>
+          </p>
+        </div>
       </div>
     </div>
   )
@@ -75,12 +91,12 @@ const AccordionItem = ({ title, content, isOpen, onClick, index }) => {
         className="w-full flex justify-between items-center gap-3 py-4  text-xl  text-left  focus:outline-none"
       >
         <h1 className="text-base">{title}</h1>
-        <span className="text-blue-700">
+        <span className="text-gray-500">
           {isOpen ?
 
             // <img src="./up-arrow.jpg" alt="down arrow" className=" max-w-5  md:min-w-8 md:max-w-8" />
-            <IoIosArrowDown />
-            :  <IoIosArrowDown />}
+            <IoIosArrowUp />
+            : <IoIosArrowDown />}
         </span>
       </button>
       <div

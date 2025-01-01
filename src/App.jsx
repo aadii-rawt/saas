@@ -54,7 +54,7 @@ const App = () => {
 
                 </div>
                 <div class="dots_border -z-20"></div>
-              </div> 
+              </div>
             </div>
           </div>
         </div>
@@ -178,7 +178,10 @@ const App = () => {
       </div>
 
 
-    <FAQ />
+      <div className="flex items-center justify-center py-10">
+        <FAQ />
+
+      </div>
 
       {/* Footer Section */}
       {/* <footer className="text-center py-6 bg-gray-900">
