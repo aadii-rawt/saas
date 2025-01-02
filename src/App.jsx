@@ -38,9 +38,7 @@ const App = () => {
             <div className="mx-auto mb-6 w-20 h-20 bg-purple-600/50 rounded-xl flex items-center justify-center">
               <span className="text-4xl text-white font-bold">N</span>
             </div>
-            {/* <span className="bg-purple-700 text-white py-1 px-3 rounded-full text-xs inline-block mb-6">
-              Updated: AI Integrated
-            </span> */}
+            
             <h2 className="text-5xl font-bold  bg-gradient-to-b from-white   via-gray-200  to-gray-500 bg-clip-text text-transparent leading-normal">
               Do perfect, make perfect with Ngendog
             </h2>
